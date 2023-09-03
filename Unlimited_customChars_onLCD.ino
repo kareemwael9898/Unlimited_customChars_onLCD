@@ -63,7 +63,7 @@ void setup() {
 }
 
 void loop() {
-  int writeDelay = 250;
+  int writingDelay = 250;
   // The position of first char on the lcd
   int startPos = 11;                                           // It dependes on size of SENTENCE & Must be >= Number of custom characters
   int currentPos = startPos;                                   // The position of the cursor
@@ -79,7 +79,7 @@ void loop() {
       scrollFrom(i);
       lcd.setCursor(8, 0);
     }
-    delay(writeDelay);
+    delay(writingDelay);
   }
   delay(2000);
   lcd.clear();
