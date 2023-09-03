@@ -65,7 +65,7 @@ void setup() {
 void loop() {
   int writingDelay = 250;
   // The position of first char on the lcd
-  int startPos = 11;                                           // It dependes on size of SENTENCE & Must be >= Number of custom characters
+  int startPos = 11;                                           // It dependes on size of LCD & Must be >= 7
   int currentPos = startPos;                                   // The position of the cursor
   int firstChar = sizeof(sentence) / sizeof(sentence[0]) - 1;  // Get the number of custom characters
   int charsOnLCD = 0;  // Current number of characters on the LCD
